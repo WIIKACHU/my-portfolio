@@ -1,0 +1,60 @@
+/* Базовые стили для светлой темы */
+body.light-theme {
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Стили для тёмной темы */
+body.dark-theme {
+    background-color: #1e1e24;
+    color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+#theme-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Расположение карточек с помощью Flexbox */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Изменение цвета карточек в темной теме */
+body.dark-theme .card {
+    background-color: #2a2a35;
+    color: #fff;
+    border-color: #444;
+}
+
+/* Эффект наведения на карточку */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
